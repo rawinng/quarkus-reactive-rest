@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/ping")
           .then()
              .statusCode(200)
-             .body(is("Hello RESTEasy"));
+             .body(is("{\"message\":\"Hello RESTEasy\"}"));
     }
 
 }
